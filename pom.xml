@@ -9,7 +9,7 @@ http://maven.apache.org/maven-v4_0_0.xsd">
 <version>0.1-SNAPSHOT</version>
 <name>domain</name>
 <url>http://maven.apache.org</url>
-<repositories>
+<!--<repositories>
     <repository>
         <id>central</id>
         <url>http://repo1.maven.org/maven2</url>
@@ -59,12 +59,12 @@ http://maven.apache.org/maven-v4_0_0.xsd">
             <enabled>false</enabled>
         </snapshots>
     </pluginRepository>
-</pluginRepositories>
+</pluginRepositories>-->
 <distributionManagement>
     <repository>
-        <id>release</id>
-          <name>ext-release</name>
-        <url>http://localhost:8080/artifactory/ext-release-local</url>
+        <id>release-candidate</id>
+          <name>release-candidate</name>
+        <url>http://localhost:9090/nexus/content/repositories/release-candidate</url>
     </repository>
 <snapshotRepository>
         <id>snapshots</id>

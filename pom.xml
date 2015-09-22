@@ -62,17 +62,17 @@ http://maven.apache.org/maven-v4_0_0.xsd">
 </pluginRepositories>-->
 <distributionManagement>
     <repository>
-        <id>release-candidate</id>
-          <name>release-candidate</name>
-        <url>http://localhost:9090/nexus/content/repositories/release-candidate</url>
+        <id>release</id>
+        <name>Pavans-MacBook-Pro.local-releases</name>
+        <url>http://localhost:8080/artifactory/cox-test</url>
     </repository>
-<snapshotRepository>
+    <snapshotRepository>
         <id>snapshots</id>
-          <name>libs-snapshot</name>
-        <url>http://localhost:8080/artifactory/ext-snapshot-local</url>
+        <name>Pavans-MacBook-Pro.local-snapshots</name>
+        <url>http://localhost:8080/artifactory/cox-test</url>
     </snapshotRepository>
-   </distributionManagement> 
-    <build>
+</distributionManagement>    
+<build>
   <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
